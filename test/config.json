@@ -1,0 +1,9 @@
+{
+	"workers":7,
+	"servers":{
+		"num":1,
+		"serverPool":[
+			"127.0.0.1"
+		]
+	}
+}
