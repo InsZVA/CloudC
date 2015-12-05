@@ -1,7 +1,7 @@
 {
 	"type":"get",		
 	"cookie":{
-		"need":"yes"
+		"need":"no"
 		},
 	"range":"url",		
 	"url":"http://ke.qq.com/course/list",
@@ -19,8 +19,8 @@
 		{
 			"name":"tt",
 			"type":"int",
-			"range":[3001,3030]
+			"range":[3026,3030]
 		}],
-	"pattern":"/<li class=\"course-card-item\">(.*)<\/li>/",
-	"databaseTemplate":"dt/tecentKt.dt"
+	"pattern":"<li class=\"course-card-item\"><a .*? href=\"(.*?)\".*?>.*?<img src=\"(.*?)\".*?title=\"(.*?)\"",
+	"databaseTemplate":"tecentKt"
 }

@@ -14,19 +14,17 @@
 >其中一条
 
 `{
-	"type":"get",		//get,post
+	"type":"get",		
 	"cookie":{
-		"need":"yes"
+		"need":"no"
 		},
-	"range":"url",		//site,url
+	"range":"url",		
 	"url":"http://ke.qq.com/course/list",
 	"params":[
 		{
 			"name":"mt",
-			"type":"int",	//int,enum
-			"range":[1001,1009]	//jsonArray
-								//int only provides start and end
-								//enum provides every node
+			"type":"int",	
+			"range":[1001,1009]	
 		},
 		{
 			"name":"st",
@@ -36,9 +34,9 @@
 		{
 			"name":"tt",
 			"type":"int",
-			"range":[3001,3030]
+			"range":[3026,3030]
 		}],
-	"pattern":"/<li class=\"course-card-item\">(.*)<\/li>/",	//regax pattern
+	"pattern":"<li class=\"course-card-item\"><a .*? href=\"(.*?)\".*?>.*?<img src=\"(.*?)\".*?title=\"(.*?)\"",
 	"databaseTemplate":"dt/tecentKt.dt"
 }`
 
@@ -49,5 +47,5 @@
 `{
 	"database":"CloudKt",
 	"table":"videos",
-	"bind":"content"
+	"bind":["href","img","title"]
 }`

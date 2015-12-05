@@ -2,7 +2,6 @@ package main
 import (
 	"./parser"
 	"./utils"
-	"fmt"
 )
 
 func main(){
@@ -10,8 +9,16 @@ func main(){
 	if(err != nil){
 		panic(err)
 	}
+	cookie := task["cookie"].(map[string]interface{})
+	needCookie := cookie["need"].(string)
 	switch task["type"] {
 		case "get":
-			fmt.Println(utils.SimpleGet(task["url"].(string),task["params"].([]interface{})))
+			if(needCookie == "no"){
+				response,err := utils.SimpleGet(task["url"].(string),task["params"].([]interface{}))
+				if(err != nil){panic(nil)}
+				matches,err := utils.Peek(response,task["pattern"].(string))
+				if(err != nil){panic(nil)}
+				utils.TestDB("tecentKt",matches)
+			}
 	}
 }
