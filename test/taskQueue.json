@@ -1,0 +1,26 @@
+{
+	"type":"get",		
+	"cookie":{
+		"need":"yes"
+		},
+	"range":"url",		
+	"url":"http://ke.qq.com/course/list",
+	"params":[
+		{
+			"name":"mt",
+			"type":"int",	
+			"range":[1001,1009]	
+		},
+		{
+			"name":"st",
+			"type":"int",
+			"range":[2004,2008]
+		},
+		{
+			"name":"tt",
+			"type":"int",
+			"range":[3001,3030]
+		}],
+	"pattern":"/<li class=\"course-card-item\">(.*)<\/li>/",
+	"databaseTemplate":"dt/tecentKt.dt"
+}
