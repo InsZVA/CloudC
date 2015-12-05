@@ -1,4 +1,4 @@
-{
+[{
 	"type":"get",		
 	"cookie":{
 		"need":"no"
@@ -9,18 +9,24 @@
 		{
 			"name":"mt",
 			"type":"int",	
-			"range":[1001,1009]	
+			"range":[{
+				"start":1001,
+				"end":1009}]	
 		},
 		{
 			"name":"st",
 			"type":"int",
-			"range":[2004,2008]
+			"range":[{
+				"start":2004,
+				"end":2008}]
 		},
 		{
 			"name":"tt",
 			"type":"int",
-			"range":[3026,3030]
+			"range":[{
+				"start":3026,
+				"end":3030}]
 		}],
 	"pattern":"<li class=\"course-card-item\"><a .*? href=\"(.*?)\".*?>.*?<img src=\"(.*?)\".*?title=\"(.*?)\"",
 	"databaseTemplate":"tecentKt"
-}
+}]

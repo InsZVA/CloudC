@@ -5,7 +5,8 @@ import (
 )
 
 func main(){
-	task,err := parser.ReadAndParseJSON("./test/taskQueue.json")
+	tasks,err := parser.ReadAndParseJSONArray("./test/taskQueue.json")
+	task := tasks[0]
 	if(err != nil){
 		panic(err)
 	}
@@ -18,7 +19,7 @@ func main(){
 				if(err != nil){panic(nil)}
 				matches,err := utils.Peek(response,task["pattern"].(string))
 				if(err != nil){panic(nil)}
-				utils.TestDB("tecentKt",matches)
+				utils.Work("tecentKt",matches)
 			}
 	}
 }

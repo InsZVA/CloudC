@@ -25,3 +25,18 @@ func ReadAndParseJSON(filePath string) (map[string]interface{},error){
 	}
 	return js,nil
 }
+
+func ReadAndParseJSONArray(filePath string) ([]map[string]interface{},error){
+	fi,err := os.Open(filePath)
+	var js []map[string]interface{}
+	if err != nil{
+		return js,err
+	}
+	defer fi.Close()
+	fd,err := ioutil.ReadAll(fi)
+	err = json.Unmarshal(fd,&js)
+	if err != nil{
+		return js,err
+	}
+	return js,nil
+}

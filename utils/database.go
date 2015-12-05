@@ -52,12 +52,9 @@ func loadTemplate(filePath string) (*DatabaseTemplate){
 	return template
 }
 
-func TestDB(tempName string,data [][]string){
+func Work(tempName string,data [][]string){
 	template := loadTemplate("./test/" + tempName + ".json")
-	Work(template,insert(data,template))
-}
-
-func Work(template *DatabaseTemplate,sqls []string){
+	sqls := insert(data,template)
 	db,err := sql.Open("mymysql",fmt.Sprintf("%s/%s/%s",template.database,DB_USER,DB_PASS))
 	if(err != nil){panic(err)}
 	defer db.Close()
