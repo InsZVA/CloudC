@@ -19,7 +19,7 @@ func main(){
 				if(err != nil){panic(nil)}
 				matches,err := utils.Peek(response,task["pattern"].(string))
 				if(err != nil){panic(nil)}
-				utils.Work("tecentKt",matches)
+				utils.DBWork("tecentKt",matches)
 			}
 	}
 }

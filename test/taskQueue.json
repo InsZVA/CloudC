@@ -11,6 +11,102 @@
 			"type":"int",	
 			"range":[{
 				"start":1001,
+				"end":1002}]	
+		},
+		{
+			"name":"st",
+			"type":"int",
+			"range":[{
+				"start":2004,
+				"end":2008}]
+		},
+		{
+			"name":"tt",
+			"type":"int",
+			"range":[{
+				"start":3026,
+				"end":3030}]
+		}],
+	"pattern":"<li class=\"course-card-item\"><a .*? href=\"(.*?)\".*?>.*?<img src=\"(.*?)\".*?title=\"(.*?)\"",
+	"databaseTemplate":"tecentKt"
+},
+{
+	"type":"get",		
+	"cookie":{
+		"need":"no"
+		},
+	"range":"url",		
+	"url":"http://ke.qq.com/course/list",
+	"params":[
+		{
+			"name":"mt",
+			"type":"int",	
+			"range":[{
+				"start":1003,
+				"end":1004}]	
+		},
+		{
+			"name":"st",
+			"type":"int",
+			"range":[{
+				"start":2004,
+				"end":2008}]
+		},
+		{
+			"name":"tt",
+			"type":"int",
+			"range":[{
+				"start":3026,
+				"end":3030}]
+		}],
+	"pattern":"<li class=\"course-card-item\"><a .*? href=\"(.*?)\".*?>.*?<img src=\"(.*?)\".*?title=\"(.*?)\"",
+	"databaseTemplate":"tecentKt"
+},
+{
+	"type":"get",		
+	"cookie":{
+		"need":"no"
+		},
+	"range":"url",		
+	"url":"http://ke.qq.com/course/list",
+	"params":[
+		{
+			"name":"mt",
+			"type":"int",	
+			"range":[{
+				"start":1005,
+				"end":1006}]	
+		},
+		{
+			"name":"st",
+			"type":"int",
+			"range":[{
+				"start":2004,
+				"end":2008}]
+		},
+		{
+			"name":"tt",
+			"type":"int",
+			"range":[{
+				"start":3026,
+				"end":3030}]
+		}],
+	"pattern":"<li class=\"course-card-item\"><a .*? href=\"(.*?)\".*?>.*?<img src=\"(.*?)\".*?title=\"(.*?)\"",
+	"databaseTemplate":"tecentKt"
+},
+{
+	"type":"get",		
+	"cookie":{
+		"need":"no"
+		},
+	"range":"url",		
+	"url":"http://ke.qq.com/course/list",
+	"params":[
+		{
+			"name":"mt",
+			"type":"int",	
+			"range":[{
+				"start":1007,
 				"end":1009}]	
 		},
 		{
