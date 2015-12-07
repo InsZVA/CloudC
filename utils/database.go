@@ -9,6 +9,7 @@ import (
 const (
 	DB_USER = "root"
 	DB_PASS = "thefirstgeek"
+	MERGE_NUM = 100		//每10条insert事务合并
 )
 
 type DatabaseTemplate struct{
@@ -58,8 +59,26 @@ func DBWork(tempName string,data [][]string){
 	db,err := sql.Open("mymysql",fmt.Sprintf("%s/%s/%s",template.database,DB_USER,DB_PASS))
 	if(err != nil){panic(err)}
 	defer db.Close()
+	i := 0 //事务合并
+	query := ""
 	for _,sql := range sqls{
-		_,err := db.Query(sql)
+		if i == 0 {
+			query = "START TRANSACTION;\n"
+		}else if i > MERGE_NUM {
+			i = 0
+			query += "COMMIT;"
+			_,err := db.Query(query)
+			query = ""
+			if(err != nil){}
+			continue
+		}else {
+			query += sql + ";\n"
+		}
+		i++
+	}
+	if i != 0{
+		query += "COMMIT;"
+		_,err := db.Query(query)
 		if(err != nil){}
 	}
 }

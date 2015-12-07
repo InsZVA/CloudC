@@ -22,7 +22,8 @@ func Worker(taskQueue []*Task){
 			if(err != nil){panic(nil)}
 			matches,err := utils.Peek(response,task.Pattern)
 			if(err != nil){panic(nil)}
-			utils.DBWork("tecentKt",matches)
+			//utils.DBWork("tecentKt",matches)
+			Query <- InsertTemplate{matches,"tecentKt"}
 		}
 	}
 	WorkerEnd <- true
