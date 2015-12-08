@@ -1,5 +1,5 @@
 {
 	"database":"CloudKt",
 	"table":"videos",
-	"bind":["href","img","title"]
+	"bind":["title","href","img"]
 }

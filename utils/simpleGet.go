@@ -28,6 +28,7 @@ func buildQuery(paramStack []*paramNode)([]string){
 		}
 		querys = append(querys,query)
 		for pos >= 0 && paramStack[pos].pos >= len(paramStack[pos].rangeEnum) - 1{
+			paramStack[pos].pos = 0
 			pos--
 		}
 		if(pos < 0){break}

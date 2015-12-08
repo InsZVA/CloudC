@@ -36,11 +36,12 @@ func LoadTaskQueue(){
 			panic(err)
 	}
 	for _,taskNode := range tasks{
-		cookie := taskNode["cookie"].(map[string]interface{})
-		needCookie := cookie["need"].(string)
 		switch taskNode["type"] {
 			case "get":
+				cookie := taskNode["cookie"].(map[string]interface{})
+				needCookie := cookie["need"].(string)
 				if(needCookie == "no"){
+					
 					produceFunction := "SimpleGet"
 					pattern := taskNode["pattern"].(string)
 					params := taskNode["params"].([]interface{})
@@ -56,6 +57,21 @@ func LoadTaskQueue(){
 					newTask.DatabaseTemplate=databaseTemplate
 					TaskQueue = append(TaskQueue,newTask)
 				}
+			case "phantomGet":
+				produceFunction := "PhantomGet"
+				pattern := taskNode["pattern"].(string)
+				params := taskNode["params"].([]interface{})
+				url := taskNode["url"].(string)
+				databaseTemplate := taskNode["databaseTemplate"].(string)
+				newTask := new(system.Task)
+				newTask.ProduceFunction = produceFunction
+				newTask.Pattern = pattern
+				newTask.Url = url
+				for _,param := range params{
+					newTask.Params = append(newTask.Params,param)
+				}
+				newTask.DatabaseTemplate=databaseTemplate
+				TaskQueue = append(TaskQueue,newTask)
 		}
 	}
 

@@ -48,6 +48,12 @@
 	"databaseTemplate":"tecentKt"
 }]`
 
+1. type
+
+`type`参数决定了CloudC如何处理该任务，他的取值如下：
+'get':简单Get，适用与大多数页面，同时也是极为高效的处理方法
+'phantomGet':使用phantomJS模拟加载页面，适用于有大量复杂cookie-session请求，或者是使用js显示内容，或使用ajax显示内容的页面，典型代表：网易云课堂
+
 ### 数据库模板
 
 >dt/tencentKt.dt
