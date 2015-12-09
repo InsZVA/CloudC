@@ -4,30 +4,16 @@
 		"need":"no"
 		},
 	"range":"url",		
-	"url":"http://ke.qq.com/course/list",
+	"url":"http://www.imooc.com/course/list",
 	"params":[
 		{
-			"name":"mt",
+			"name":"page",
 			"type":"int",	
 			"range":[{
-				"start":1001,
-				"end":1001}]	
-		},
-		{
-			"name":"st",
-			"type":"int",
-			"range":[{
-				"start":2001,
-				"end":2004}]
-		},
-		{
-			"name":"tt",
-			"type":"int",
-			"range":[{
-				"start":3026,
-				"end":3030}]
+				"start":1,
+				"end":3}]	
 		}],
-	"pattern":"<li class=\"course-card-item\"><a .*? href=\"(.*?)\".*?>.*?<img src=\"(.*?)\".*?title=\"(.*?)\"",
+	"pattern":"<li class=\"course-one\">\\s*?<a.*? href=\"(.*?)\".*?>\\s*?.*?\\s*?<img .*alt=\"(.*?)\".*? src=\"(.*?)\"",
 	"databaseTemplate":"tecentKt"
 },
 {
@@ -36,30 +22,16 @@
 		"need":"no"
 		},
 	"range":"url",		
-	"url":"http://ke.qq.com/course/list",
+	"url":"http://www.imooc.com/course/list",
 	"params":[
 		{
-			"name":"mt",
+			"name":"page",
 			"type":"int",	
 			"range":[{
-				"start":1002,
-				"end":1002}]	
-		},
-		{
-			"name":"st",
-			"type":"int",
-			"range":[{
-				"start":2001,
-				"end":2004}]
-		},
-		{
-			"name":"tt",
-			"type":"int",
-			"range":[{
-				"start":3026,
-				"end":3030}]
+				"start":4,
+				"end":6}]	
 		}],
-	"pattern":"<li class=\"course-card-item\"><a .*? href=\"(.*?)\".*?>.*?<img src=\"(.*?)\".*?title=\"(.*?)\"",
+	"pattern":"<li class=\"course-one\">\\s*?<a.*? href=\"(.*?)\".*?>\\s*?.*?\\s*?<img .*alt=\"(.*?)\".*? src=\"(.*?)\"",
 	"databaseTemplate":"tecentKt"
 },
 {
@@ -68,30 +40,16 @@
 		"need":"no"
 		},
 	"range":"url",		
-	"url":"http://ke.qq.com/course/list",
+	"url":"http://www.imooc.com/course/list",
 	"params":[
 		{
-			"name":"mt",
+			"name":"page",
 			"type":"int",	
 			"range":[{
-				"start":1003,
-				"end":1003}]	
-		},
-		{
-			"name":"st",
-			"type":"int",
-			"range":[{
-				"start":2001,
-				"end":2004}]
-		},
-		{
-			"name":"tt",
-			"type":"int",
-			"range":[{
-				"start":3026,
-				"end":3030}]
+				"start":7,
+				"end":9}]	
 		}],
-	"pattern":"<li class=\"course-card-item\"><a .*? href=\"(.*?)\".*?>.*?<img src=\"(.*?)\".*?title=\"(.*?)\"",
+	"pattern":"<li class=\"course-one\">\\s*?<a.*? href=\"(.*?)\".*?>\\s*?.*?\\s*?<img .*alt=\"(.*?)\".*? src=\"(.*?)\"",
 	"databaseTemplate":"tecentKt"
 },
 {
@@ -100,30 +58,16 @@
 		"need":"no"
 		},
 	"range":"url",		
-	"url":"http://ke.qq.com/course/list",
+	"url":"http://www.imooc.com/course/list",
 	"params":[
 		{
-			"name":"mt",
+			"name":"page",
 			"type":"int",	
 			"range":[{
-				"start":1004,
-				"end":1004}]	
-		},
-		{
-			"name":"st",
-			"type":"int",
-			"range":[{
-				"start":2001,
-				"end":2004}]
-		},
-		{
-			"name":"tt",
-			"type":"int",
-			"range":[{
-				"start":3026,
-				"end":3030}]
+				"start":10,
+				"end":12}]	
 		}],
-	"pattern":"<li class=\"course-card-item\"><a .*? href=\"(.*?)\".*?>.*?<img src=\"(.*?)\".*?title=\"(.*?)\"",
+	"pattern":"<li class=\"course-one\">\\s*?<a.*? href=\"(.*?)\".*?>\\s*?.*?\\s*?<img .*alt=\"(.*?)\".*? src=\"(.*?)\"",
 	"databaseTemplate":"tecentKt"
 },
 {
@@ -132,30 +76,16 @@
 		"need":"no"
 		},
 	"range":"url",		
-	"url":"http://ke.qq.com/course/list",
+	"url":"http://www.imooc.com/course/list",
 	"params":[
 		{
-			"name":"mt",
+			"name":"page",
 			"type":"int",	
 			"range":[{
-				"start":1005,
-				"end":1005}]	
-		},
-		{
-			"name":"st",
-			"type":"int",
-			"range":[{
-				"start":2001,
-				"end":2004}]
-		},
-		{
-			"name":"tt",
-			"type":"int",
-			"range":[{
-				"start":3026,
-				"end":3030}]
+				"start":13,
+				"end":15}]	
 		}],
-	"pattern":"<li class=\"course-card-item\"><a .*? href=\"(.*?)\".*?>.*?<img src=\"(.*?)\".*?title=\"(.*?)\"",
+	"pattern":"<li class=\"course-one\">\\s*?<a.*? href=\"(.*?)\".*?>\\s*?.*?\\s*?<img .*alt=\"(.*?)\".*? src=\"(.*?)\"",
 	"databaseTemplate":"tecentKt"
 },
 {
@@ -164,30 +94,16 @@
 		"need":"no"
 		},
 	"range":"url",		
-	"url":"http://ke.qq.com/course/list",
+	"url":"http://www.imooc.com/course/list",
 	"params":[
 		{
-			"name":"mt",
+			"name":"page",
 			"type":"int",	
 			"range":[{
-				"start":1006,
-				"end":1006}]	
-		},
-		{
-			"name":"st",
-			"type":"int",
-			"range":[{
-				"start":2001,
-				"end":2004}]
-		},
-		{
-			"name":"tt",
-			"type":"int",
-			"range":[{
-				"start":3026,
-				"end":3030}]
+				"start":15,
+				"end":19}]	
 		}],
-	"pattern":"<li class=\"course-card-item\"><a .*? href=\"(.*?)\".*?>.*?<img src=\"(.*?)\".*?title=\"(.*?)\"",
+	"pattern":"<li class=\"course-one\">\\s*?<a.*? href=\"(.*?)\".*?>\\s*?.*?\\s*?<img .*alt=\"(.*?)\".*? src=\"(.*?)\"",
 	"databaseTemplate":"tecentKt"
 },
 {
@@ -196,189 +112,15 @@
 		"need":"no"
 		},
 	"range":"url",		
-	"url":"http://ke.qq.com/course/list",
+	"url":"http://www.imooc.com/course/list",
 	"params":[
 		{
-			"name":"mt",
+			"name":"page",
 			"type":"int",	
 			"range":[{
-				"start":1001,
-				"end":1001}]	
-		},
-		{
-			"name":"st",
-			"type":"int",
-			"range":[{
-				"start":2005,
-				"end":2008}]
-		},
-		{
-			"name":"tt",
-			"type":"int",
-			"range":[{
-				"start":3026,
-				"end":3030}]
+				"start":20,
+				"end":23}]	
 		}],
-	"pattern":"<li class=\"course-card-item\"><a .*? href=\"(.*?)\".*?>.*?<img src=\"(.*?)\".*?title=\"(.*?)\"",
-	"databaseTemplate":"tecentKt"
-},
-{
-	"type":"get",		
-	"cookie":{
-		"need":"no"
-		},
-	"range":"url",		
-	"url":"http://ke.qq.com/course/list",
-	"params":[
-		{
-			"name":"mt",
-			"type":"int",	
-			"range":[{
-				"start":1002,
-				"end":1002}]	
-		},
-		{
-			"name":"st",
-			"type":"int",
-			"range":[{
-				"start":2005,
-				"end":2008}]
-		},
-		{
-			"name":"tt",
-			"type":"int",
-			"range":[{
-				"start":3026,
-				"end":3030}]
-		}],
-	"pattern":"<li class=\"course-card-item\"><a .*? href=\"(.*?)\".*?>.*?<img src=\"(.*?)\".*?title=\"(.*?)\"",
-	"databaseTemplate":"tecentKt"
-},
-{
-	"type":"get",		
-	"cookie":{
-		"need":"no"
-		},
-	"range":"url",		
-	"url":"http://ke.qq.com/course/list",
-	"params":[
-		{
-			"name":"mt",
-			"type":"int",	
-			"range":[{
-				"start":1003,
-				"end":1003}]	
-		},
-		{
-			"name":"st",
-			"type":"int",
-			"range":[{
-				"start":2005,
-				"end":2008}]
-		},
-		{
-			"name":"tt",
-			"type":"int",
-			"range":[{
-				"start":3026,
-				"end":3030}]
-		}],
-	"pattern":"<li class=\"course-card-item\"><a .*? href=\"(.*?)\".*?>.*?<img src=\"(.*?)\".*?title=\"(.*?)\"",
-	"databaseTemplate":"tecentKt"
-},
-{
-	"type":"get",		
-	"cookie":{
-		"need":"no"
-		},
-	"range":"url",		
-	"url":"http://ke.qq.com/course/list",
-	"params":[
-		{
-			"name":"mt",
-			"type":"int",	
-			"range":[{
-				"start":1004,
-				"end":1004}]	
-		},
-		{
-			"name":"st",
-			"type":"int",
-			"range":[{
-				"start":2005,
-				"end":2008}]
-		},
-		{
-			"name":"tt",
-			"type":"int",
-			"range":[{
-				"start":3026,
-				"end":3030}]
-		}],
-	"pattern":"<li class=\"course-card-item\"><a .*? href=\"(.*?)\".*?>.*?<img src=\"(.*?)\".*?title=\"(.*?)\"",
-	"databaseTemplate":"tecentKt"
-},
-{
-	"type":"get",		
-	"cookie":{
-		"need":"no"
-		},
-	"range":"url",		
-	"url":"http://ke.qq.com/course/list",
-	"params":[
-		{
-			"name":"mt",
-			"type":"int",	
-			"range":[{
-				"start":1005,
-				"end":1005}]	
-		},
-		{
-			"name":"st",
-			"type":"int",
-			"range":[{
-				"start":2005,
-				"end":2008}]
-		},
-		{
-			"name":"tt",
-			"type":"int",
-			"range":[{
-				"start":3026,
-				"end":3030}]
-		}],
-	"pattern":"<li class=\"course-card-item\"><a .*? href=\"(.*?)\".*?>.*?<img src=\"(.*?)\".*?title=\"(.*?)\"",
-	"databaseTemplate":"tecentKt"
-},
-{
-	"type":"get",		
-	"cookie":{
-		"need":"no"
-		},
-	"range":"url",		
-	"url":"http://ke.qq.com/course/list",
-	"params":[
-		{
-			"name":"mt",
-			"type":"int",	
-			"range":[{
-				"start":1006,
-				"end":1006}]	
-		},
-		{
-			"name":"st",
-			"type":"int",
-			"range":[{
-				"start":2005,
-				"end":2008}]
-		},
-		{
-			"name":"tt",
-			"type":"int",
-			"range":[{
-				"start":3026,
-				"end":3030}]
-		}],
-	"pattern":"<li class=\"course-card-item\"><a .*? href=\"(.*?)\".*?>.*?<img src=\"(.*?)\".*?title=\"(.*?)\"",
+	"pattern":"<li class=\"course-one\">\\s*?<a.*? href=\"(.*?)\".*?>\\s*?.*?\\s*?<img .*alt=\"(.*?)\".*? src=\"(.*?)\"",
 	"databaseTemplate":"tecentKt"
 }]

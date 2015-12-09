@@ -1,7 +1,8 @@
 package utils
 import (
 	"io/ioutil"
-	"os/exec"
+	"net/http"
+	_"os/exec"
 )
 
 func PhantomGet(url string,params []interface{}) ([]byte,error){

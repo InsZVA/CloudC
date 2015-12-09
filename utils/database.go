@@ -9,7 +9,7 @@ import (
 const (
 	DB_USER = "root"
 	DB_PASS = "thefirstgeek"
-	MERGE_NUM = 100		//每10条insert事务合并
+	MERGE_NUM = 10		//每10条insert事务合并
 )
 
 type DatabaseTemplate struct{

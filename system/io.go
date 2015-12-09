@@ -14,12 +14,15 @@ type InsertTemplate struct{
 }
 
 var Query chan InsertTemplate
+var Commit bool	//最后一项事务是否处理完毕
 
 func IO(){
 	//Initialize
 	Query = make(chan InsertTemplate,MAX_CHAN)
 	for{
 		query := <- Query
+		Commit = false
 		utils.DBWork(query.Template,query.Data)
+		Commit = true
 	}
 }
